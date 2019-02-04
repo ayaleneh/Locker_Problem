@@ -24,10 +24,12 @@ class Locker {
 
             for(int i = 1; i < lock.length - 1; ++i) {
 
-                if(lock[i])
-                System.out.print("o+");
+                if(lock[i]){
+                    System.out.print("+");
+                    System.out.print(i);
+                }
             else
-                System.out.print("c-");
+                System.out.print("-");
             }
             System.out.println();
         }
